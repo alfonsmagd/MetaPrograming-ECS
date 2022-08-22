@@ -23,7 +23,7 @@ namespace ECS {
     public:
 
         template<typename T>
-        std::size_t getComponentByID() {
+        static std::size_t getComponentByID() {
             static std::size_t type{ ++nextID };
             return type;
         }
